@@ -1,0 +1,24 @@
+criando o primeiro servidor (novo projeto)
+
+iniciar algumas configurações (no terminal):
+
+1 - abrir uma nova pasta
+2 - npm init
+3 - npm install express (framework para construir o back-end)
+
+obs: package-lock.json = tem os históricos das atualizações do projeto
+
+4 - criar um arquivo em javascript (ex: index.js)
+5 - no index.js, checar as dependências instaladas
+
+const express = require('express'); -> trazer o framework para o projeto;
+const server = express(); -> trazer o framework como função para utilizar os métodos http nele, armazenando em uma constante;
+
+server.get('/', function(req,res){
+    res.send('hello world');
+    });
+server.listen(3000);
+
+
+rodar no terminal: node index.js
+no navegador: http://localhost:3000/
